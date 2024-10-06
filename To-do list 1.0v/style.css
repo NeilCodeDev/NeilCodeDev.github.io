@@ -1,0 +1,199 @@
+@keyframes fade-out {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgba(10, 123, 175, 0.897) 50%, rgba(135, 4, 168, 0.733));
+}
+
+
+.main {
+    background-color: aliceblue;
+    width: 25%;
+    min-width: 350px;
+    min-height: 300px;
+    max-width: 500px;
+    max-height: 400px;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fade-out 0.3s ease-in forwards; 
+}
+
+
+.header {
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 196);
+    width: 100%;
+    height: 15%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 5vmin;
+    color: white;
+}
+
+
+.newTaskBtn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+
+    border-radius: 0 0 90px 90px;
+    padding: clamp(20px, 2vw, 15px );
+    font-size: clamp(15px, 2vw, 25px );
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.newTaskBtn:hover {
+    background-color: rgb(188, 191, 196);
+}
+
+
+
+.containerInput {
+    align-self: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.inputField {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    
+}
+
+
+.okBtn {
+    cursor: pointer;
+    padding: 10px;
+    background-image: url(img/ok.png);
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    padding: 16px;
+
+    transition: transform 0.1s;
+
+}
+
+.okBtn:hover {
+    transform: scale(1.2);
+}
+
+
+.delBtn {
+    cursor: pointer;
+    padding: 10px;
+    background-image: url(img/delete.png);
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    padding: 16px;
+    margin-left: 7px;
+
+    transition: transform 0.1s;
+}
+
+.delBtn:hover {
+    transform: scale(1.2);
+}
+
+
+.liEl {
+    margin: 15px 10px 15px 40px;
+    overflow-wrap: break-word;
+}
+
+
+.olEl {
+    overflow-y: scroll;
+    
+}
+
+
+
+
+.checkboxEl {
+    margin-right: 10px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+}
+
+
+
+.delLineBtn {
+    margin-left: 7px;
+    padding: 15px;
+    border-radius: 50%;
+    background-image: url(img/delBtnPng.png);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    top: -8px;
+
+    transition: transform 0.1s;
+    
+}
+
+
+.delLineBtn:hover {
+    transform: scale(1.5);
+
+}
